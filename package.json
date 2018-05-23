@@ -1,0 +1,34 @@
+{
+  "name": "jsgraph",
+  "version": "0.0.1",
+  "description": "A Graph Database inspired of the Tinkerpop API",
+  "author": "Pierre Sauvage <m.sauvage.pierre@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pierrotws/jsgraph/issues"
+  },
+  "homepage": "https://github.com/Pierrotws/jsgraph",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pierrotws/jsgraph"
+  },
+  "keywords": [
+    "graph",
+    "database",
+    "in-memory",
+    "tinkerpop"
+  ],
+  "main": "lib",
+  "dependencies": {
+    "lodash": "^4.6.1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "coffeescript": "^2.3.0",
+    "mocha": "5.1.1"
+  },
+  "scripts": {
+    "coffee": "./node_modules/.bin/coffee -b -o lib src",
+    "test": "mocha --require coffeescript/register test/**.coffee --reporter spec"
+  }
+}
